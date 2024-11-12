@@ -1,0 +1,9 @@
+---
+- name: Install ElasticSearch, Kibana and Logstash
+  hosts: all
+  become: yes
+
+  roles:
+    - elasticsearch
+    - kibana
+    - logstash
